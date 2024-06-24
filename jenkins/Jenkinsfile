@@ -29,7 +29,7 @@ stages {
     }
     post {
       success {
-        junit stdioRetention: '', testResults: 'myproject/target/test-reports/*.xml'
+      junit 'target/surefire-reports/*.xml'
       }
     }
   }
